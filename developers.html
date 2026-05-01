@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developers | ESCANO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div id="vanta-bg"></div>
+
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Escano Logo" class="logo-img">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="feature.html">Feature</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="developers.html" style="color: #ff8c00;">Developers</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="#hire" class="hire-us">Hire Us</a>
+                <button class="btn-start">Start Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dev-section">
+            <div class="dev-intro">
+                <h2>MEET THE <span>DEVELOPERS</span></h2>
+                <p>The dark minds behind the Inferno.</p>
+            </div>
+
+            <div class="pyramid-container">
+
+                <div class="pyramid-row hidden-slide-right">
+                    <div class="dev-card" data-stat1="50%" data-stat2="55%" data-stat3="100%">
+                        <div class="dev-img-wrapper">
+                            <img src="images/dev1.jpg" alt="Developer 1">
+                        </div>
+                        <h3>Capua, Mark Justin B.</h3>
+                        <p class="role">Project Manager</p>
+
+                        <div class="hidden-bio" style="display: none;">
+                            The mastermind behind the Inferno.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pyramid-row hidden-slide-left">
+                    <div class="dev-card">
+                        <div class="dev-img-wrapper">
+                            <img src="images/dev2.jpg" alt="Developer 2">
+                        </div>
+                        <h3>Aviles, Jewel Naces</h3>
+                        <p class="role">Game Support</p>
+
+                        <div class="hidden-bio" style="display: none;">
+                        </div>
+                    </div>
+
+                    <div class="dev-card">
+                        <div class="dev-img-wrapper">
+                            <img src="images/dev3.png" alt="Developer 3">
+                        </div>
+                        <h3>Onato, Marlito</h3>
+                        <p class="role">Game Support</p>
+
+                            <div class="hidden-bio" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pyramid-row hidden-slide-right">
+                    <div class="dev-card">
+                        <div class="dev-img-wrapper">
+                            <img src="images/temp.jpg" alt="Developer 4">
+                        </div>
+                        <h3>Calaycay, Daniel</h3>
+                        <p class="role">Game Support</p>
+                        <div class="hidden-bio" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="dev-card">
+                        <div class="dev-img-wrapper">
+                            <img src="images/temp.jpg" alt="Developer 5">
+                        </div>
+                        <h3>Albay, Roma</h3>
+                        <p class="role">Game Support</p>
+                        <div class="hidden-bio" style="display: none;">
+                        </div>
+                    </div>
+                    <div class="dev-card">
+                        <div class="dev-img-wrapper">
+                            <img src="images/temp.jpg" alt="Developer 6">
+                        </div>
+                        <h3>Paculanan, Vhiel</h3>
+                        <p class="role">Game Support</p>
+                        <div class="hidden-bio" style="display: none;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="hire" class="hire-section">
+            <div class="hire-header">
+                <h2>UNITE <span>WITH</span> US</h2>
+                <p>Need a game developed? Pixel art designed? Let's bring your nightmares to life.</p>
+            </div>
+
+            <div class="hire-container">
+
+                <div class="hire-services hidden-slide-left">
+                    <h3>OUR EXPERTISE</h3>
+
+                    <div class="service-item">
+                        <h4>👾 2D Pixel Art & Animation</h4>
+                        <p>Characters, environments, and smooth sprite animations ready for any engine.</p>
+                    </div>
+
+                    <div class="service-item">
+                        <h4>⚙️ Full Game Development</h4>
+                        <p>From prototype to final build. We code the logic so you don't have to.</p>
+                    </div>
+                </div>
+
+                <div class="hire-form-box hidden-slide-right">
+                    <h3>START A PROJECT</h3>
+                    <form id="hire-form">
+                        <div class="input-group">
+                            <input type="text" id="client-name" required>
+                            <label for="client-name">Your Name / Company</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" id="client-email" required>
+                            <label for="client-email">Email Address</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <select id="project-type" required>
+                                <option value="" disabled selected></option>
+                                <option value="pixel-art">2D Pixel Art</option>
+                                <option value="full-game">Full Game Dev</option>
+                                <option value="sound">Sound Design</option>
+                                <option value="other">Other</option>
+                            </select>
+                            <label for="project-type" class="select-label">Type of Project</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea id="project-details" rows="3" required></textarea>
+                            <label for="project-details">Tell us about your game...</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <button type="submit" class="btn-submit-glow">REQUEST QUOTE</button>
+                    </form>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+            
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Escano Logo">
+                <p>Survive the depths. Face the Demon Lords. Escape from the Inferno.</p>
+            </div>
+            
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Explore</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Game</a>
+                    <a href="#news">Patch Notes</a>
+                </div>
+                
+                <div class="link-column">
+                    <h4>Support</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Report a Bug</a>
+                </div>
+                
+                <div class="link-column">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2026 ESCANO Game Studios. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div id="dev-modal" class="modal-overlay">
+        <div class="modal-content split-layout">
+            <span id="close-modal">&times;</span>
+
+            <div class="modal-left">
+                <div class="modal-img-wrapper">
+                    <img id="modal-img" src="" alt="Developer Profile">
+                </div>
+            </div>
+
+            <div class="modal-right">
+                <h3 id="modal-name">Developer Name</h3>
+                <p id="modal-role" class="role">Role</p>
+
+                <div class="modal-desc">
+                    <p id="modal-bio">Summoned from the depths to forge this reality. Master of the dark arts of coding.
+                    </p>
+
+                    <div class="dev-stats">
+                        <div class="stat-row">
+                            <span>Creativity</span>
+                            <div class="stat-bar">
+                                <div id="modal-stat1" class="stat-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Logic & Coding</span>
+                            <div class="stat-bar">
+                                <div id="modal-stat2" class="stat-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                        <div class="stat-row">
+                            <span>Coffee Level</span>
+                            <div class="stat-bar">
+                                <div id="modal-stat3" class="stat-fill" style="width: 0%; background: #ff2a00;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

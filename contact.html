@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | ESCANO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="vanta-bg"></div>
+
+    <!-- NAVBAR MO (Same as index) -->
+    <header>
+        <nav class="navbar">
+            <div class="nav-left">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Escano Logo" class="logo-img">
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="feature.html">Feature</a></li>
+                    <li><a href="contact.html" style="color: #ff8c00;">Contact</a></li>
+                    <li><a href="developers.html">Developers</a></li>
+                </ul>
+            </div>
+            <div class="nav-right">
+                <a href="developers.html#hire" class="hire-us">Hire Us</a>
+                <button class="btn-start">Start Now</button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-section hidden-slide-left">
+            <div class="contact-container">
+
+                <div class="contact-info">
+                    <h2>CONTACT THE <span>DEVELOPERS</span></h2>
+                    <p>Have a bug to report? Reach out to us. We are listening from the depths of the Inferno.</p>
+
+                    <div class="contact-details">
+                        <p><strong>Email:</strong> <span>escapefromtheinferno@gmail.com</span></p>
+                        <p><strong>Location:</strong><span> Universidad de Dagupan, Pantal, Arellano St., Dagupan City,
+                                Philippines, 2400</span></p>
+                    </div>
+                </div>
+
+                <div class="contact-form-wrapper">
+                    <form id="escano-contact-form">
+
+                        <div class="input-group">
+                            <input type="text" id="name" required>
+                            <label for="name">Your Name / Gamer Tag</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <input type="email" id="email" required>
+                            <label for="email">Email Address</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <div class="input-group">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Enter the Inferno (Your Message)</label>
+                            <span class="focus-border"></span>
+                        </div>
+
+                        <button type="submit" class="btn-submit-glow">SEND MESSAGE</button>
+
+                </div>
+                </form>
+            </div>
+
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="footer-content">
+
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Escano Logo">
+                <p>Survive the depths. Face the Demon Lords. Escape from the Inferno.</p>
+            </div>
+
+            <div class="footer-links">
+                <div class="link-column">
+                    <h4>Explore</h4>
+                    <a href="#home">Home</a>
+                    <a href="#about">About Game</a>
+                    <a href="#news">Patch Notes</a>
+                </div>
+
+                <div class="link-column">
+                    <h4>Support</h4>
+                    <a href="#">FAQ</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Report a Bug</a>
+                </div>
+
+                <div class="link-column">
+                    <h4>Legal</h4>
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 ESCANO Game Studios. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.fog.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
