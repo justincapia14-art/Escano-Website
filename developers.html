@@ -137,35 +137,28 @@
 
                 <div class="hire-form-box">
                     <h3>START A PROJECT</h3>
+                    
                     <form id="hire-form">
                         <div class="input-group">
-                            <input type="text" id="client-name" required>
-                            <label for="client-name">Your Name / Company</label>
-                            <span class="focus-border"></span>
+                            <input type="text" id="client-name" placeholder="Your Name / Company" required>
                         </div>
 
                         <div class="input-group">
-                            <input type="email" id="client-email" required>
-                            <label for="client-email">Email Address</label>
-                            <span class="focus-border"></span>
+                            <input type="email" id="client-email" placeholder="Email Address" required>
                         </div>
 
                         <div class="input-group">
                             <select id="project-type" required>
-                                <option value="" disabled selected></option>
+                                <option value="" disabled selected>Type of Project</option>
                                 <option value="pixel-art">2D Pixel Art</option>
                                 <option value="full-game">Full Game Dev</option>
                                 <option value="sound">Sound Design</option>
                                 <option value="other">Other</option>
                             </select>
-                            <label for="project-type" class="select-label">Type of Project</label>
-                            <span class="focus-border"></span>
                         </div>
 
                         <div class="input-group">
-                            <textarea id="project-details" rows="3" required></textarea>
-                            <label for="project-details">Tell us about your game...</label>
-                            <span class="focus-border"></span>
+                            <textarea id="project-details" rows="3" placeholder="Tell us about your game..." required></textarea>
                         </div>
 
                         <button type="submit" class="btn-submit-glow">REQUEST QUOTE</button>

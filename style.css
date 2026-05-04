@@ -617,41 +617,6 @@ body {
     transition: 0.3s;
 }
 
-.input-group label {
-    position: absolute;
-    top: 10px;
-    left: 0;
-    font-size: 16px;
-    color: #777;
-    pointer-events: none;
-    transition: 0.3s ease all;
-}
-
-.input-group input:focus ~ label, 
-.input-group input:valid ~ label,
-.input-group textarea:focus ~ label,
-.input-group textarea:valid ~ label {
-    top: -20px;
-    font-size: 12px;
-    color: #ff8c00;
-    letter-spacing: 1px;
-}
-
-.focus-border {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 2px;
-    background-color: #ff2a00;
-    transition: 0.4s ease-in-out;
-}
-
-.input-group input:focus ~ .focus-border,
-.input-group textarea:focus ~ .focus-border {
-    width: 100%;
-}
-
 .btn-submit-glow {
     background: transparent;
     color: #ff8c00;
@@ -672,19 +637,6 @@ body {
     color: #000;
     box-shadow: 0 0 20px #ff8c00;
 }
-
-/* .hidden-msg {
-    display: none;
-    margin-top: 20px;
-    padding: 15px;
-    border: 1px solid #00ff00;
-    background-color: rgba(0, 255, 0, 0.1);
-    color: #00ff00;
-    text-align: center;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
-} */
-
 
 /* ==========================================
    INTRO ANIMATION
@@ -948,13 +900,6 @@ body {
 .input-group select option {
     background-color: #111;
     color: #fff;
-}
-
-.input-group select:focus ~ .select-label, 
-.input-group select:valid ~ .select-label {
-    top: -20px;
-    font-size: 12px;
-    color: #ff8c00;
 }
 
 /* ==========================================
