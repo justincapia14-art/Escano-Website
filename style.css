@@ -29,6 +29,7 @@ body {
     gap: 30px;
 }
 
+
 .nav-links {
     display: flex;
     list-style: none;
@@ -84,10 +85,8 @@ body {
     cursor: pointer;
 }
 
-
-
 /* ==========================================
-   HERO SECTION (LEFT-ALIGNED VIDEO BACKGROUND)
+   HERO SECTION 
 =========================================== */
 .hero {
     position: relative; 
@@ -100,7 +99,6 @@ body {
     background-color: transparent !important; 
 }
 
-/* LOOPING VIDEO BACKGROUND */
 .hero-video {
     position: absolute;
     top: 0;
@@ -113,7 +111,6 @@ body {
     mask-image: none;
 }
 
-/* GRADIENT OVERLAY (Cinematic Edges) */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -135,7 +132,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: flex-start; 
-    text-align: left; 
     
     position: relative; 
     z-index: 3;
@@ -154,12 +150,12 @@ body {
     margin-bottom: 15px;
 }
 
-
 .hero-buttons {
     display: flex;
     gap: 15px;
     align-self: center;
 }
+
 .btn-learn {
     background-color: #ff8c00;
     color: #000;
@@ -196,7 +192,6 @@ body {
     transform: scale(1.05);
 }
 
-
 .logo-img {
     width: 100px;
     padding-top: 4px;
@@ -222,7 +217,7 @@ body {
 
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 1fr); 
     gap: 20px;
     width: 100%;
     max-width: 1200px;
@@ -248,7 +243,7 @@ body {
 }
 
 .news-card {
-    height: 200px;
+    height: 250px; 
     border-radius: 8px;
     border: 2px solid transparent;
     cursor: pointer;
@@ -267,13 +262,7 @@ body {
 .card-1 { background: linear-gradient(transparent, #000000),url("images/boss.png");}
 .card-2 { background: linear-gradient(transparent, #000000), url("images/layout.png");}
 .card-3 { background: linear-gradient(transparent, #000000), url("images/riffle.png"); background-size: 100px 100px; }
-.card-4 { background: linear-gradient(transparent, #000000), url("images/ult_player.png"); background-size: 200px 200px; }
 
-
-.news-card {
-    min-width: calc(33.33% - 13.33px);
-    height: 250px;
-}
 
 .feature-section {
     background-color: rgba(0, 0, 0, 0.7) !important;
