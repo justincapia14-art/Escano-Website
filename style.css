@@ -10,6 +10,7 @@ html {
 }
 
 body {
+    overflow-x: hidden;
     background-color: #0b0c10;
 }
 
@@ -72,7 +73,7 @@ body {
     font-size: 10px;
 }
 
-.btn-start {
+.github {
     font-size: 10px;
     background-color: #ff8c00;
     color: black;
@@ -219,11 +220,32 @@ body {
     color: #ff8c00;
 }
 
-/* .news-grid {
+.news-grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-} */
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.news-card {
+    width: 100%;
+    height: 250px;
+    border-radius: 8px;
+    border: 2px solid transparent;
+    cursor: pointer;
+    display: flex;
+    align-items: flex-end;
+    padding: 15px;
+    color: #ffffff;
+    transition: transform 0.3s, border 0.3s;
+}
+
+.news-card:hover {
+    border: 2px solid #ff8c00;
+    transform: translateY(-5px);
+}
 
 .news-card {
     height: 200px;
@@ -247,45 +269,6 @@ body {
 .card-3 { background: linear-gradient(transparent, #000000), url("images/riffle.png"); background-size: 100px 100px; }
 .card-4 { background: linear-gradient(transparent, #000000), url("images/ult_player.png"); background-size: 200px 200px; }
 
-.carousel-wrapper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-    gap: 20px;
-}
-
-.nav-btn {
-    background-color: #ff8c00;
-    color: black;
-    border: none;
-    padding: 15px;
-    font-size: 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: transform 0.2s;
-}
-
-.nav-btn:hover {
-    transform: scale(1.1);
-}
-
-
-.nav-btn:active {
-    transform: scale(1);
-}
-
-.carousel-viewport {
-    flex-grow: 1;
-    overflow: hidden;
-    padding: 15px 5px;
-}
-
-.news-track {
-    display: flex;
-    gap: 20px;
-    transition: transform 0.4s ease-in-out;
-}
 
 .news-card {
     min-width: calc(33.33% - 13.33px);
@@ -798,18 +781,6 @@ body {
     z-index: 1;
 }
 
-.dev-card::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(90deg, transparent, #ff2a00, #ff8c00, transparent);
-    transition: 0.4s ease;
-    z-index: -1;
-}
-
 .dev-card:hover {
     transform: translateY(-10px);
     border-color: #331100;
@@ -817,10 +788,6 @@ body {
     background: #111111;
 }
 
-.dev-card:hover::before {
-    height: 100%;
-    opacity: 0.05;
-}
 
 .dev-img-wrapper {
     width: 130px;
@@ -1006,190 +973,6 @@ body {
     background-color: transparent !important; 
 }
 
-.modal-content.split-layout {
-    display: flex;
-    align-items: center;
-    background: #0a0a0a;
-    border: 2px solid #ff2a00;
-    padding: 40px;
-    border-radius: 12px;
-    width: 90%;
-    max-width: 800px; 
-    position: relative;
-    box-shadow: 0 0 50px rgba(255, 42, 0, 0.4);
-    gap: 40px; 
-    
-    transform: scale(0.7);
-    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-}
-
-.modal-overlay.show-modal .modal-content {
-    transform: scale(1);
-}
-
-
-.modal-left {
-    flex: 1;
-    display: flex;
-    justify-content: center;
-}
-
-.modal-img-wrapper {
-    width: 250px; 
-    height: 250px;
-    border-radius: 50%;
-    padding: 6px;
-    background: linear-gradient(45deg, #ff2a00, #ff8c00);
-}
-
-#modal-img {
-    width: 100%;
-    height: 100%;
-    border-radius: 50%;
-    object-fit: cover;
-    border: 5px solid #0a0a0a;
-}
-
-
-.modal-right {
-    flex: 1.5;
-    text-align: left;
-}
-
-#modal-name {
-    color: #fff;
-    font-size: 36px;
-    margin-bottom: 5px;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-}
-
-#modal-role {
-    color: #ff8c00;
-    font-size: 16px;
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    margin-bottom: 20px;
-    border-bottom: 1px solid #333;
-    padding-bottom: 15px;
-}
-
-#modal-bio {
-    color: #ccc;
-    font-size: 15px;
-    line-height: 1.6;
-    margin-bottom: 25px;
-}
-
-.dev-stats {
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.stat-row {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-}
-
-.stat-row span {
-    color: #888;
-    font-size: 13px;
-    text-transform: uppercase;
-    width: 120px;
-}
-
-.stat-bar {
-    flex: 1;
-    height: 8px;
-    background: #222;
-    border-radius: 4px;
-    overflow: hidden;
-}
-
-.stat-fill {
-    height: 100%;
-    background: linear-gradient(90deg, #ff8c00, #ff2a00);
-    border-radius: 4px;
-}
-
-/* ==========================================
-   MODAL BACKGROUND & CLOSE BUTTON 
-=========================================== */
-.modal-overlay {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background: rgba(0, 0, 0, 0.85); 
-    backdrop-filter: blur(8px);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 10000; 
-    
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 0.4s ease;
-}
-
-.modal-overlay.show-modal {
-    opacity: 1;
-    pointer-events: auto;
-}
-
-#close-modal {
-    position: absolute;
-    top: 15px;
-    right: 25px;
-    color: #555;
-    font-size: 35px;
-    font-weight: bold;
-    cursor: pointer;
-    transition: color 0.3s;
-    z-index: 2;
-}
-
-#close-modal:hover {
-    color: #ff2a00; 
-}
-
-/* ==========================================
-   SLIDE-IN ANIMATIONS (SCROLL & PAGE EXIT)
-=========================================== */
-
-.hidden-slide-left {
-    opacity: 0;
-    transform: translateX(-100px);
-    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.hidden-slide-right {
-    opacity: 0;
-    transform: translateX(100px);
-    transition: opacity 0.6s ease-out, transform 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-}
-
-.show-slide {
-    opacity: 1 !important;
-    transform: translateX(0) !important;
-}
-
-.delay-1 { transition-delay: 0.1s; }
-.delay-2 { transition-delay: 0.2s; }
-.delay-3 { transition-delay: 0.3s; }
-
-/* ==========================================
-   PAGE EXIT TRANSITION 
-=========================================== */
-.slide-out-page {
-    opacity: 0 !important;
-    transform: translateX(-50px) !important;
-    transition: opacity 0.4s ease-in, transform 0.4s ease-in !important;
-}
-
 /* ==========================================
    GAME MECHANICS / FEATURES PAGE STYLING
 =========================================== */
@@ -1331,7 +1114,7 @@ body {
         gap: 15px;
     }
 
-    .btn-start a {
+    .github a {
         display: block;
         width: 100%;
         height: 100%;
@@ -1377,18 +1160,14 @@ body {
         font-size: 24px;
         text-align: center;
     }
-    .carousel-wrapper {
-        gap: 5px;
-        padding: 0;
+
+    .news-grid {
+        grid-template-columns: 1fr;
+        gap: 15px;
     }
-    .nav-btn {
-        padding: 10px;
-        font-size: 16px;
-    }
-    .news-track .news-card {
-        min-width: 100%; 
+    
+    .news-card {
         height: 220px;
-        flex-shrink: 0; 
     }
 
     .about-container {
