@@ -62,7 +62,7 @@ body {
 .subtitle {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px !important;
-    color: #ffffff; 
+    color: #ffffff;
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -89,14 +89,14 @@ body {
    HERO SECTION 
 =========================================== */
 .hero {
-    position: relative; 
-    height: 90vh; 
+    position: relative;
+    height: 90vh;
     display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-    padding-left: 8%; 
+    align-items: center;
+    justify-content: flex-start;
+    padding-left: 8%;
     overflow: hidden;
-    background-color: transparent !important; 
+    background-color: transparent !important;
 }
 
 .hero-video {
@@ -105,8 +105,8 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    object-fit: cover; 
-    z-index: 1; 
+    object-fit: cover;
+    z-index: 1;
     -webkit-mask-image: none;
     mask-image: none;
 }
@@ -117,23 +117,23 @@ body {
     left: 0;
     width: 100%;
     height: 100%;
-    
-    background: 
+
+    background:
         linear-gradient(to bottom, transparent 75%, #0b0c10 100%),
-        
+
         linear-gradient(to top, transparent 85%, #0b0c10 100%),
-        
+
         linear-gradient(to right, rgba(11, 12, 16, 0.95) 0%, rgba(11, 12, 16, 0.4) 50%, transparent 100%);
-        
-    z-index: 2; 
+
+    z-index: 2;
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
-    align-items: flex-start; 
-    
-    position: relative; 
+    align-items: flex-start;
+
+    position: relative;
     z-index: 3;
     max-width: 800px;
 }
@@ -217,7 +217,7 @@ body {
 
 .news-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); 
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
     max-width: 1200px;
@@ -235,6 +235,11 @@ body {
     padding: 15px;
     color: #ffffff;
     transition: transform 0.3s, border 0.3s;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    image-rendering: pixelated;
+    background-color: #000;
 }
 
 .news-card:hover {
@@ -242,26 +247,18 @@ body {
     transform: translateY(-5px);
 }
 
-.news-card {
-    height: 250px; 
-    border-radius: 8px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    display: flex;
-    align-items: flex-end;
-    padding: 15px;
-    color: #ffffff;
-    transition: transform 0.3s, border 0.3s;
+.card-1 {
+    background-image: url("images/boss.png");
 }
 
-.news-card:hover {
-    border: 2px solid #ff8c00;
-    transform: translateY(-5px);
+.card-2 {
+    background-image: url("images/layout.png");
 }
 
-.card-1 { background: linear-gradient(transparent, #000000), url("images/boss.png");}
-.card-2 { background: linear-gradient(transparent, #000000), url("images/layout.png");}
-.card-3 { background: linear-gradient(transparent, #000000), url("images/riffle.png"); background-size: 100px 100px; }
+.card-3 {
+    background-image: url("images/riffle.png");
+}
+
 
 
 .feature-section {
@@ -269,7 +266,7 @@ body {
     padding: 80px 50px;
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: cover; 
+    background-size: cover;
     color: #ffffff;
     position: relative;
 }
@@ -329,6 +326,7 @@ body {
     border-radius: 8px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8)
 }
+
 /* ==========================================
    FOOTER STYLING
 =========================================== */
@@ -347,7 +345,7 @@ body {
     align-items: center;
     justify-content: center;
     max-width: 1200px;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .footer-logo {
@@ -373,7 +371,7 @@ body {
     text-align: center;
     margin-top: 30px;
     padding-top: 0px;
-    border-top: none; 
+    border-top: none;
     font-size: 12px;
     color: #555555;
     width: 100%;
@@ -463,14 +461,14 @@ body {
 body {
     font-family: Arial, sans-serif;
 
-    background: 
-        linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.9)),
+    background:
+        linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)),
         url("images/bground.png");
 
-    background-size: cover;        
-    background-position: center;   
-    background-repeat: no-repeat;  
-    background-attachment: fixed;  
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
     color: white;
 }
@@ -479,7 +477,7 @@ body {
     position: fixed;
     width: 200px;
     height: 200px;
-    background: radial-gradient(circle, rgba(255,0,0,0.3), transparent);
+    background: radial-gradient(circle, rgba(255, 0, 0, 0.3), transparent);
     border-radius: 50%;
     pointer-events: none;
     transform: translate(-50%, -50%);
@@ -530,7 +528,7 @@ body {
 }
 
 .contact-info h2 span {
-    color: #ff2a00; 
+    color: #ff2a00;
 }
 
 .contact-info p {
@@ -563,7 +561,7 @@ body {
     margin-bottom: 35px;
 }
 
-.input-group input, 
+.input-group input,
 .input-group textarea {
     width: 100%;
     padding: 10px 0;
@@ -610,7 +608,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999; 
+    z-index: 9999;
     transition: opacity 1s ease-out;
 }
 
@@ -620,13 +618,13 @@ body {
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
     letter-spacing: 5px;
-    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4); 
+    text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
     transition: all 0.2s ease;
 }
 
 .fade-out-intro {
     opacity: 0;
-    pointer-events: none; 
+    pointer-events: none;
 }
 
 
@@ -643,6 +641,7 @@ body {
     text-align: center;
     min-height: 100vh;
 }
+
 .dev-intro h2 {
     font-size: 50px;
     color: #ffffff;
@@ -654,7 +653,7 @@ body {
 }
 
 .dev-intro h2 span {
-    color: #ff2a00; 
+    color: #ff2a00;
 }
 
 .dev-intro p {
@@ -706,7 +705,7 @@ body {
     margin: 0 auto 20px auto;
     border-radius: 50%;
     padding: 4px;
-    background: linear-gradient(45deg, #1a1a1a, #333333); 
+    background: linear-gradient(45deg, #1a1a1a, #333333);
     transition: 0.4s ease;
 }
 
@@ -722,12 +721,10 @@ body {
     border-radius: 50%;
     object-fit: cover;
     border: 4px solid #0a0a0a;
-    filter: grayscale(100%) contrast(1.2); 
     transition: 0.5s ease;
 }
 
 .dev-card:hover img {
-    filter: grayscale(0%) contrast(1);
     transform: scale(1.05);
 }
 
@@ -757,7 +754,7 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    
+
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -801,10 +798,11 @@ body {
     border: 1px solid #333;
     padding: 40px;
     border-radius: 12px;
-    backdrop-filter: blur(10px); 
+    backdrop-filter: blur(10px);
 }
 
-.hire-services h3, .hire-form-box h3 {
+.hire-services h3,
+.hire-form-box h3 {
     color: #ff2a00;
     font-size: 24px;
     margin-bottom: 30px;
@@ -853,7 +851,7 @@ body {
     border-bottom: 2px solid #555;
     outline: none;
     cursor: pointer;
-    appearance: none; 
+    appearance: none;
 }
 
 .input-group select option {
@@ -866,7 +864,7 @@ body {
 =========================================== */
 #vanta-bg {
     position: fixed;
-    z-index: -999; 
+    z-index: -999;
     top: 0;
     left: 0;
     width: 100vw;
@@ -874,7 +872,7 @@ body {
 }
 
 body {
-    background-color: transparent !important; 
+    background-color: transparent !important;
 }
 
 /* ==========================================
@@ -900,7 +898,7 @@ body {
 }
 
 .mechanics-header h2 span {
-    color: #ff2a00; 
+    color: #ff2a00;
 }
 
 .mechanics-header p {
@@ -920,12 +918,12 @@ body {
 .mechanic-card {
     background: linear-gradient(145deg, #0f0f0f, #050505);
     border: 1px solid #222;
-    border-bottom: 3px solid #ff8c00; 
+    border-bottom: 3px solid #ff8c00;
     border-radius: 8px;
     padding: 30px 20px;
     text-align: center;
     transition: all 0.3s ease;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 }
 
 .mechanic-card:hover {
@@ -955,13 +953,13 @@ body {
 .mech-icon-wrapper img {
     width: 100%;
     height: 100%;
-    object-fit: cover; 
+    object-fit: cover;
     filter: brightness(0.8);
     transition: filter 0.3s;
 }
 
 .mechanic-card:hover .mech-icon-wrapper img {
-    filter: brightness(1.1); 
+    filter: brightness(1.1);
 }
 
 .mechanic-card h3 {
@@ -980,8 +978,112 @@ body {
 .mech-boss-card {
     border-bottom: 3px solid #ff2a00;
 }
+
 .mech-boss-card h3 {
     color: #ff2a00;
+}
+
+/* ==========================================
+   HOW TO PLAY PAGE 
+=========================================== */
+.howtoplay-section {
+    padding: 100px 5%;
+    background-color: rgba(0, 0, 0, 0.8) !important;
+    min-height: 100vh;
+}
+
+.howtoplay-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.howtoplay-header h2 {
+    font-size: 50px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 3px;
+    text-shadow: 0 5px 15px rgba(255, 42, 0, 0.4);
+}
+
+.howtoplay-header h2 span {
+    color: #ff2a00;
+}
+
+.howtoplay-header p {
+    color: #aaaaaa;
+    font-size: 18px;
+}
+
+.step-row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    max-width: 1200px;
+    margin: 0 auto 80px auto;
+    background: linear-gradient(145deg, rgba(15,15,15,0.8), rgba(5,5,5,0.9));
+    border: 1px solid #222;
+    border-radius: 12px;
+    padding: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, border-color 0.3s;
+}
+
+.step-row:hover {
+    transform: translateY(-5px);
+    border-color: #ff8c00;
+    box-shadow: 0 15px 40px rgba(255, 140, 0, 0.15);
+}
+
+.step-row.reverse {
+    flex-direction: row-reverse;
+}
+
+.step-text {
+    flex: 1;
+}
+
+.step-text .step-number {
+    display: inline-block;
+    background-color: #ff2a00;
+    color: white;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 5px 15px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.step-text h3 {
+    font-size: 32px;
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+}
+
+.step-text p {
+    font-size: 16px;
+    color: #cccccc;
+    line-height: 1.7;
+}
+
+.step-video {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.step-video video {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;     
+    object-fit: cover;
+    border-radius: 8px;
+    border: 2px solid #ff8c00;
+    box-shadow: 0 0 20px rgba(255, 140, 0, 0.3);
 }
 
 
@@ -989,7 +1091,9 @@ body {
    MOBILE RESPONSIVENESS (CELLPHONE VIEW)
 =========================================== */
 @media (max-width: 768px) {
-    html, body {
+
+    html,
+    body {
         overflow-x: hidden;
         width: 100%;
     }
@@ -999,19 +1103,23 @@ body {
         padding: 15px !important;
         gap: 15px;
     }
+
     .nav-left {
         flex-direction: column;
         gap: 15px;
     }
+
     .nav-links {
         flex-wrap: wrap;
         justify-content: center;
         gap: 12px;
     }
+
     .nav-links a {
-        font-size: 13px; 
+        font-size: 13px;
         padding: 5px;
     }
+
     .nav-right {
         justify-content: center;
         width: 100%;
@@ -1029,28 +1137,34 @@ body {
         justify-content: center;
         text-align: center;
     }
+
     .hero-content {
         align-items: center;
         padding: 0;
         width: 100%;
     }
+
     .hero-title {
         max-width: 90%;
     }
+
     .subtitle {
         font-size: 16px !important;
     }
+
     .hero-buttons {
         flex-direction: column;
         width: 100%;
         gap: 15px;
     }
-    .btn-learn, .btn-get {
+
+    .btn-learn,
+    .btn-get {
         width: 100%;
     }
 
-    .news-section, 
-    .feature-section, 
+    .news-section,
+    .feature-section,
     .site-footer,
     .dev-section,
     .hire-section,
@@ -1069,7 +1183,7 @@ body {
         grid-template-columns: 1fr;
         gap: 15px;
     }
-    
+
     .news-card {
         height: 220px;
     }
@@ -1078,6 +1192,7 @@ body {
         flex-direction: column;
         text-align: center;
     }
+
     .about-text h1 {
         font-size: 40px;
     }
@@ -1085,11 +1200,13 @@ body {
     .contact-container {
         flex-direction: column;
     }
+
     .contact-info {
         border-right: none;
         border-bottom: 1px solid #333;
         padding: 30px 20px;
     }
+
     .contact-form-wrapper {
         padding: 30px 20px;
     }
@@ -1099,30 +1216,39 @@ body {
         text-align: center;
         gap: 30px;
     }
-    .mechanics-header h2, .feature-intro h2 {
+
+    .mechanics-header h2,
+    .feature-intro h2 {
         font-size: 32px;
     }
+
     .mech-icon-wrapper {
         height: auto;
         aspect-ratio: 16/9;
     }
 
-    .dev-intro h2, .hire-header h2 {
+    .dev-intro h2,
+    .hire-header h2 {
         font-size: 32px;
     }
+
     .pyramid-row {
         flex-direction: column;
         align-items: center;
         gap: 30px;
     }
+
     .dev-card {
         width: 100%;
         max-width: 300px;
     }
+
     .hire-container {
         flex-direction: column;
     }
-    .hire-services, .hire-form-box {
+
+    .hire-services,
+    .hire-form-box {
         padding: 25px 15px;
     }
 
@@ -1131,5 +1257,16 @@ body {
         align-items: center;
         text-align: center;
         gap: 30px;
+    }
+
+    .step-row, .step-row.reverse {
+        flex-direction: column;
+        padding: 25px;
+        gap: 30px;
+        text-align: center;
+    }
+    
+    .howtoplay-header h2 {
+        font-size: 35px;
     }
 }

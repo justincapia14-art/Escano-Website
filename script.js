@@ -7,26 +7,27 @@ document.addEventListener("DOMContentLoaded", function() {
 
     if (introScreen && introText) {
         setTimeout(function() {
-            introText.innerText = "FROM THE";
-        }, 800);
-
-        setTimeout(function() {
-            introText.innerText = "INFERNO";
-        }, 1600);
-
-        setTimeout(function() {
-            introText.innerText = "ESCANO";
-            introText.style.color = "#ff2a00"; 
+            introText.innerText = "FROM THE INFERNO";
             introText.style.transform = "scale(1.2)"; 
-        }, 2400);
+        }, 1500);
+
+        setTimeout(function() {
+            introText.innerHTML = '<img src="images/main-title.png" alt="Escano" style="max-width: 500px; height: auto;">'; 
+            introText.style.transform = "scale(1.6)";           
+        }, 3000);
+
+        // setTimeout(function() {
+        //     introText.innerHTML = '<img src="images/main-title.png" alt="Escano" style="max-width: 500px; height: auto;">'; 
+        //     introText.style.transform = "scale(1.6)";        
+        // }, 4500);
 
         setTimeout(function() {
             introScreen.classList.add("fade-out-intro");
-        }, 3500);
+        }, 4500);
 
         setTimeout(function() {
             introScreen.style.display = "none";
-        }, 4500);
+        }, 6500);
     }
 });
 
