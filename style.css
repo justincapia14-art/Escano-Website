@@ -1,8 +1,14 @@
+@font-face {
+  font-family: 'VCR Mono';
+  src: url('fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
+}
+
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'VCR Mono', monospace;
+    /* font-family: Arial, Helvetica, sans-serif; */
 }
 
 html {
@@ -40,7 +46,7 @@ body {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
     transition: color 0.3s;
 }
 
@@ -71,11 +77,11 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
-    font-size: 10px;
+    font-size: 12px;
 }
 
 .github {
-    font-size: 10px;
+    font-size: 12px;
     background-color: #ff8c00;
     color: black;
     border: none;
@@ -615,7 +621,8 @@ body {
 #intro-text {
     font-size: 60px;
     color: #ffffff;
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'VCR Mono', monospace;
+    /* font-family: 'Courier New', Courier, monospace; */
     font-weight: bold;
     letter-spacing: 5px;
     text-shadow: 0 0 15px rgba(255, 0, 0, 0.4);
