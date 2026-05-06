@@ -66,7 +66,7 @@ body {
 }
 
 .subtitle {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'VCR Mono', monospace;
     font-size: 20px !important;
     color: #ffffff;
     margin-bottom: 30px;
