@@ -1,12 +1,16 @@
+<<<<<<< HEAD
 @font-face {
   font-family: 'VCR Mono';
   src: url('fonts/VCR_OSD_MONO_1.001.ttf') format('truetype');
 }
 
+=======
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 * {
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+<<<<<<< HEAD
     font-family: 'VCR Mono', monospace;
     /* font-family: Arial, Helvetica, sans-serif; */
 }
@@ -17,6 +21,12 @@ html {
 
 body {
     overflow-x: hidden;
+=======
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     background-color: #0b0c10;
 }
 
@@ -24,8 +34,13 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+<<<<<<< HEAD
     background-color: rgba(0, 0, 0, 0.9) !important;
     padding: 0px 30px;
+=======
+    background-color: #1a1a1b;
+    padding: 15px 30px;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     border-bottom: 2px solid #333;
 }
 
@@ -35,7 +50,10 @@ body {
     gap: 30px;
 }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 .nav-links {
     display: flex;
     list-style: none;
@@ -46,7 +64,11 @@ body {
     color: #e0e0e0;
     text-decoration: none;
     font-weight: bold;
+<<<<<<< HEAD
     font-size: 12px;
+=======
+    font-size: 14px;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     transition: color 0.3s;
 }
 
@@ -60,6 +82,7 @@ body {
     gap: 20px;
 }
 
+<<<<<<< HEAD
 .nav-right a {
     text-decoration: none;
     color: white;
@@ -69,6 +92,12 @@ body {
     font-family: 'VCR Mono', monospace;
     font-size: 20px !important;
     color: #ffffff;
+=======
+.subtitle {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 24px;
+    color: #ffffff; 
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     margin-bottom: 30px;
     text-shadow: 2px 2px 4px #000000;
 }
@@ -77,6 +106,7 @@ body {
     color: #ffffff;
     text-decoration: none;
     font-weight: bold;
+<<<<<<< HEAD
     font-size: 12px;
 }
 
@@ -86,11 +116,22 @@ body {
     color: black;
     border: none;
     padding: 5px 20px;
+=======
+    font-size: 14px;
+}
+
+.btn-start {
+    background-color: #ff8c00;
+    color: black;
+    border: none;
+    padding: 10px 20px;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     border-radius: 4px;
     font-weight: bold;
     cursor: pointer;
 }
 
+<<<<<<< HEAD
 /* ==========================================
    HERO SECTION 
 =========================================== */
@@ -132,11 +173,24 @@ body {
         linear-gradient(to right, rgba(11, 12, 16, 0.95) 0%, rgba(11, 12, 16, 0.4) 50%, transparent 100%);
 
     z-index: 2;
+=======
+.hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url("images/fire.png");
+    background-color: #111;
+    background-size: cover; 
+    background-position: center;
+    
+    height: 80vh; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 }
 
 .hero-content {
     display: flex;
     flex-direction: column;
+<<<<<<< HEAD
     align-items: flex-start;
 
     position: relative;
@@ -153,11 +207,21 @@ body {
 .hero-title {
     width: 100%;
     max-width: 500px;
+=======
+    align-items: center;
+    text-align: center;
+}
+
+.hero-title {
+    max-width: 600px;
+    width: 100%;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     margin-bottom: 15px;
 }
 
 .hero-buttons {
     display: flex;
+<<<<<<< HEAD
     gap: 15px;
     align-self: center;
 }
@@ -196,6 +260,29 @@ body {
 .btn-get:hover {
     background-color: #ffffff;
     transform: scale(1.05);
+=======
+    gap: 20px;
+}
+
+.btn-learn, .btn-trailer {
+    background: linear-gradient(to bottom, #ffb700, #ff6a00);
+    color: #000000;
+    border: 3px solid #000000;
+    padding: 12px 25px;
+    font-size: 16px;
+    font-weight: 900;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.6);
+    transition: transform 0.1s;
+}
+
+.btn-learn:hover, .btn-trailer:hover {
+    transform: scale(1.05);
+}
+
+.btn-learn:active, .btn-trailer:active {
+    transform: scale(0.95);
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 }
 
 .logo-img {
@@ -204,10 +291,15 @@ body {
 }
 
 .news-section {
+<<<<<<< HEAD
     background: linear-gradient(to bottom, #0b0c10 0%, rgba(0, 0, 0, 0.7) 30%) !important;
     padding: 60px 50px;
     margin-top: 0;
     border-top: none;
+=======
+    padding: 60px 50px;
+    background-color: #0b0c10;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 }
 
 .section-title {
@@ -223,6 +315,7 @@ body {
 
 .news-grid {
     display: grid;
+<<<<<<< HEAD
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     width: 100%;
@@ -233,6 +326,14 @@ body {
 .news-card {
     width: 100%;
     height: 250px;
+=======
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.news-card {
+    height: 200px;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     border-radius: 8px;
     border: 2px solid transparent;
     cursor: pointer;
@@ -241,11 +342,14 @@ body {
     padding: 15px;
     color: #ffffff;
     transition: transform 0.3s, border 0.3s;
+<<<<<<< HEAD
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     image-rendering: pixelated;
     background-color: #000;
+=======
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 }
 
 .news-card:hover {
@@ -253,6 +357,7 @@ body {
     transform: translateY(-5px);
 }
 
+<<<<<<< HEAD
 .card-1 {
     background-image: url("images/boss.png");
 }
@@ -273,6 +378,69 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
+=======
+.card-1 { background: linear-gradient(transparent, #000000),url("images/boss.png");}
+.card-2 { background: linear-gradient(transparent, #000000), url("images/layout.png"); }
+.card-3 { background: linear-gradient(transparent, #000000), url("images/riffle.png"); background-size: 100px 100px; }
+.card-4 { background: linear-gradient(transparent, #000000), url("images/ult_player.png"); background-size: 200px 200px; }
+.card-5 { background: linear-gradient(transparent, #000000), url("boss2.png"); background-size: cover; }
+.card-6 { background: linear-gradient(transparent, #000000), url("multiplayer.png"); background-size: cover; }
+.card-7 { background: linear-gradient(transparent, #000000), url("patch.png"); background-size: cover; }
+.card-8 { background: linear-gradient(transparent, #000000), url("speedrun.png"); background-size: cover; }
+.card-9 { background: linear-gradient(transparent, #000000), url("lore.png"); background-size: cover; }
+
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.nav-btn {
+    background-color: #ff8c00;
+    color: black;
+    border: none;
+    padding: 15px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: transform 0.2s;
+}
+
+.nav-btn:hover {
+    transform: scale(1.1);
+}
+
+
+.nav-btn:active {
+    transform: scale(1);
+}
+
+.carousel-viewport {
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.news-track {
+    display: flex;
+    gap: 20px;
+    transition: transform 0.4s ease-in-out;
+}
+
+.news-card {
+    min-width: calc(33.33% - 13.33px);
+    height: 200px;
+}
+
+.feature-section {
+    padding: 80px 50px;
+    background-image: url("images/hex-pattern.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     color: #ffffff;
     position: relative;
 }
@@ -300,7 +468,11 @@ body {
     align-items: center;
     justify-content: space-between;
     gap: 60px;
+<<<<<<< HEAD
     max-width: 1200px;
+=======
+    max-width: 1800px;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
     margin: 0 auto;
 }
 
@@ -333,20 +505,33 @@ body {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.8)
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 /* ==========================================
    FOOTER STYLING
 =========================================== */
 .site-footer {
+<<<<<<< HEAD
     background-color: #000 !important;
     color: #b3b3b3;
     padding: 40px 50px 20px 50px;
     border-top: none;
     margin-top: 0;
     text-align: center;
+=======
+    background-color: #050505; /* Halos pitch black para sa contrast */
+    color: #b3b3b3;
+    padding: 60px 50px 20px 50px;
+    border-top: 1px solid #1a1a1a; /* Manipis na linya sa itaas */
+    margin-top: 50px; /* Espasyo mula sa huling section */
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 }
 
 .footer-content {
     display: flex;
+<<<<<<< HEAD
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -359,6 +544,19 @@ body {
     flex-direction: column;
     align-items: center;
     margin-bottom: 10px;
+=======
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto; /* Pinapagitna ang content */
+    flex-wrap: wrap; 
+    gap: 40px;
+}
+
+/* 1. Logo Section */
+.footer-logo {
+    flex: 1;
+    min-width: 250px;
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
 }
 
 .footer-logo img {
@@ -370,6 +568,7 @@ body {
     font-size: 14px;
     color: #888888;
     line-height: 1.5;
+<<<<<<< HEAD
     max-width: 400px;
 }
 
@@ -1277,3 +1476,53 @@ body {
         font-size: 35px;
     }
 }
+=======
+}
+
+/* 2. Links Section */
+.footer-links {
+    display: flex;
+    gap: 60px; /* Espasyo sa pagitan ng mga columns */
+    flex: 2;
+    justify-content: flex-end; /* Itinutulak ang mga links pakanan */
+    flex-wrap: wrap;
+}
+
+.link-column {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.link-column h4 {
+    color: #ffffff;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+.link-column a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+/* Hover effect na orange para terno sa buttons mo */
+.link-column a:hover {
+    color: #ff8c00;
+}
+
+/* 3. Copyright Section */
+.footer-bottom {
+    text-align: center;
+    margin-top: 60px;
+    padding-top: 20px;
+    border-top: 1px solid #1a1a1a;
+    font-size: 12px;
+    color: #555555;
+}
+
+
+>>>>>>> dfdceae4f776f64676b5821e346085bc264c287c
